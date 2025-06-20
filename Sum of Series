@@ -1,0 +1,29 @@
+%This is the program; of a formula that I derived to find sum of any series
+clear
+clc
+% This is the code to find equation of sum using actual formula
+syms n a d
+series = [];
+coeff = [] %Add the first terms;
+l = length(series);
+sum = 0;
+
+p = length(coeff);
+
+for i = 1:p
+    x = 1;
+    for j = 1:i
+        x = x*(n-(j-1));
+    end
+    sum = sum + x*coeff(i)/factorial(i);
+end
+
+%Equation for sum of series
+sn = simplify(sum);
+
+%Evaluation the sum of series for n terms
+n = 20;
+answer = eval(sn);
+
+disp(sn)
+fprintf('Sum of series for n terms = %g\n', answer)
