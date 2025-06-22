@@ -20,3 +20,5 @@ For example:
                  2   2  2  2   2       ...   2
 
 Hence, coeff = [1 3 2]
+
+As a result, the code gives the equation of the sum and it's value.
