@@ -1,7 +1,7 @@
-%This is the program; of a formula that I derived to find sum of any series
+%This is the program of a formula that I derived to find the sum of any series
 clear
 clc
-% This is the code to find equation of sum using actual formula
+% This is the code to find the equation of the sum using the actual formula
 syms n a d
 series = [];
 coeff = [] %Add the first terms;
@@ -18,10 +18,10 @@ for i = 1:p
     sum = sum + x*coeff(i)/factorial(i);
 end
 
-%Equation for sum of series
+%Equation for the sum of the series
 sn = simplify(sum);
 
-%Evaluation the sum of series for n terms
+% Evaluate the sum of the series for n terms
 n = 20;
 answer = eval(sn);
 
